@@ -19,6 +19,10 @@ body {
     cursor: pointer;
 }
 
+h2 {
+    font-size: 3.6rem;
+}
+
 //SECTION :     header
 header {
     background-color: rgb(0, 88, 175);
@@ -70,6 +74,28 @@ nav {
 
     &--btns {
         display: flex;
+        gap: 2rem;
+    }
+}
+
+//SECTION :     Step Counter
+.stepcounter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 5rem;
+
+    &__step {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    &__count {
+        display: flex;
+        align-items: center;
         gap: 2rem;
     }
 }

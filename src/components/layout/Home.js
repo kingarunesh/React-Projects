@@ -14,6 +14,12 @@ export default function Home() {
                             Counter
                         </Link>
                     </li>
+
+                    <li>
+                        <Link to="/stepcounter" target="_blank">
+                            Step Counter
+                        </Link>
+                    </li>
                 </ol>
             </nav>
 

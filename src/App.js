@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/layout/Home";
 import NoPage from "./components/pages/NoPage";
 import Counter from "./components/pages/Counter";
+import StepCounter from "./components/pages/StepCounter";
 
 export default function App() {
     return (
@@ -11,8 +12,9 @@ export default function App() {
                 <Routes>
                     <Route>
                         <Route index element={<Home />} />
-                        <Route path="/counter" element={<Counter />} />
                         <Route path="*" element={<NoPage />} />
+                        <Route path="/counter" element={<Counter />} />
+                        <Route path="/stepcounter" element={<StepCounter />} />
                     </Route>
                 </Routes>
             </BrowserRouter>
