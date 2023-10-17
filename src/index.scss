@@ -99,3 +99,25 @@ nav {
         gap: 2rem;
     }
 }
+
+//SECTION :        Date Counter
+
+.dateCounter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 5rem;
+
+    &__step,
+    &__count {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    &__result {
+        font-size: 3rem;
+    }
+}

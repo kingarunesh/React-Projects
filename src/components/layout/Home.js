@@ -20,6 +20,12 @@ export default function Home() {
                             Step Counter
                         </Link>
                     </li>
+
+                    <li>
+                        <Link to="/datecounter" target="_blank">
+                            Date Counter
+                        </Link>
+                    </li>
                 </ol>
             </nav>
 

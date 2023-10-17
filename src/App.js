@@ -4,6 +4,7 @@ import Home from "./components/layout/Home";
 import NoPage from "./components/pages/NoPage";
 import Counter from "./components/pages/Counter";
 import StepCounter from "./components/pages/StepCounter";
+import DateCounter from "./components/pages/DateCounter";
 
 export default function App() {
     return (
@@ -15,6 +16,7 @@ export default function App() {
                         <Route path="*" element={<NoPage />} />
                         <Route path="/counter" element={<Counter />} />
                         <Route path="/stepcounter" element={<StepCounter />} />
+                        <Route path="/datecounter" element={<DateCounter />} />
                     </Route>
                 </Routes>
             </BrowserRouter>
