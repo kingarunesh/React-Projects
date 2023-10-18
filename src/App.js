@@ -8,6 +8,7 @@ import DateCounter from "./components/pages/DateCounter";
 import SliderInputDateCounter from "./components/pages/SliderInputDateCounter";
 import ProfileCard from "./components/devprofile/ProfileCard";
 import FoodMenu from "./components/food-menu/FoodMenu";
+import QuizFlashCard from "./components/simple-flash-card/QuizFlashCard";
 
 export default function App() {
     return (
@@ -23,6 +24,7 @@ export default function App() {
                         <Route path="/sliderinputdatecounter" element={<SliderInputDateCounter />} />
                         <Route path="/profilecard" element={<ProfileCard />} />
                         <Route path="/foodmenu" element={<FoodMenu />} />
+                        <Route path="/quizflashcard" element={<QuizFlashCard />} />
                     </Route>
                 </Routes>
             </BrowserRouter>
