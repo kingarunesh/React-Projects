@@ -10,6 +10,7 @@ import ProfileCard from "./components/devprofile/ProfileCard";
 import FoodMenu from "./components/food-menu/FoodMenu";
 import QuizFlashCard from "./components/simple-flash-card/QuizFlashCard";
 import ImageFlashCard from "./components/image-flash-card/ImageFlashCard";
+import SimpleSteps from "./components/simple-steps/SimpleSteps";
 
 export default function App() {
     return (
@@ -27,6 +28,7 @@ export default function App() {
                         <Route path="/foodmenu" element={<FoodMenu />} />
                         <Route path="/quizflashcard" element={<QuizFlashCard />} />
                         <Route path="/image-flash-card" element={<ImageFlashCard />} />
+                        <Route path="/simple-steps" element={<SimpleSteps />} />
                     </Route>
                 </Routes>
             </BrowserRouter>

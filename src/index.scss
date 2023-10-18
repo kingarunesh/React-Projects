@@ -382,3 +382,44 @@ footer {
         }
     }
 }
+
+//SECTION :     Simple Steps
+.simpleSteps {
+    width: 50%;
+    margin: 4rem auto;
+    background-color: #f3f3f3;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+
+    &__message {
+        font-size: 2.8rem;
+        font-weight: bold;
+    }
+
+    &__btns {
+        display: flex;
+        gap: 2rem;
+
+        button {
+            padding: 0.6rem 1rem;
+            font-size: 1.6rem;
+            cursor: pointer;
+        }
+    }
+
+    &__indicators {
+        display: flex;
+        gap: 1rem;
+
+        div {
+            background-color: #ddd;
+            padding: 0.4rem 0.8rem;
+            font-size: 1.4rem;
+            border-radius: 10rem;
+        }
+    }
+}

@@ -49,6 +49,11 @@ export default function Home() {
                             Image Flash Card
                         </Link>
                     </li>
+                    <li>
+                        <Link to="/simple-steps" target="_blank">
+                            Simple Steps
+                        </Link>
+                    </li>
                 </ol>
             </nav>
 
