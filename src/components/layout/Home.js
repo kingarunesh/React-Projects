@@ -3,7 +3,7 @@ import { Outlet, Link } from "react-router-dom";
 export default function Home() {
     return (
         <>
-            <header>
+            <header className="home__header">
                 <h2>Basic Projects and Components</h2>
             </header>
 
@@ -33,6 +33,12 @@ export default function Home() {
                     <li>
                         <Link to="/profilecard" target="_blank">
                             Profile Card
+                        </Link>
+                    </li>
+
+                    <li>
+                        <Link to="/foodmenu" target="_blank">
+                            Food Menu
                         </Link>
                     </li>
                 </ol>
