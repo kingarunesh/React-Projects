@@ -159,3 +159,69 @@ nav {
         font-weight: bold;
     }
 }
+
+//SECTION :     dev profile
+
+.profileCard {
+    width: 500px;
+    background-color: #eee;
+    margin: auto;
+    margin-top: 4rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0px 1px 5px 3px #ccc;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    &__image {
+        img {
+            width: 100%;
+            border-radius: 1rem;
+        }
+    }
+
+    &__about {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        p {
+            font-size: 1.8rem;
+            color: #555;
+        }
+
+        &--skills {
+            font-size: 1.6rem;
+
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+
+            div {
+                padding: 0.6rem 1rem;
+                border-radius: 10rem;
+            }
+        }
+
+        &--contact {
+            text-align: center;
+
+            button {
+                cursor: pointer;
+                border: none;
+                padding: 1rem 1.8rem;
+                background-color: orangered;
+                font-size: 1.8rem;
+                border-radius: 1rem;
+                color: #fff;
+                transition: all 0.5s;
+            }
+
+            button:hover {
+                background-color: rgb(213, 57, 0);
+            }
+        }
+    }
+}

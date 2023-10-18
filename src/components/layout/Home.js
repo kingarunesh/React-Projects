@@ -29,6 +29,12 @@ export default function Home() {
                             Slider Input Date Counter
                         </Link>
                     </li>
+
+                    <li>
+                        <Link to="/profilecard" target="_blank">
+                            Profile Card
+                        </Link>
+                    </li>
                 </ol>
             </nav>
 
