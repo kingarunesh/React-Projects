@@ -14,16 +14,19 @@ export default function Home() {
                             Counter
                         </Link>
                     </li>
-
                     <li>
                         <Link to="/stepcounter" target="_blank">
                             Step Counter
                         </Link>
                     </li>
-
                     <li>
                         <Link to="/datecounter" target="_blank">
                             Date Counter
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/sliderinputdatecounter" target="_blank">
+                            Slider Input Date Counter
                         </Link>
                     </li>
                 </ol>

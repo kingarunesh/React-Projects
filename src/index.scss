@@ -119,5 +119,43 @@ nav {
 
     &__result {
         font-size: 3rem;
+        padding: 1rem 1.6rem;
+        border-radius: 1rem;
+        color: #ededed;
+    }
+}
+
+//SECTION :         Slider Input Date Counter
+
+.sliderInputDateCounter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+
+    margin-top: 5rem;
+
+    &__slider {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        font-size: 2rem;
+    }
+
+    &__count {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        font-size: 2rem;
+
+        input[type="number"] {
+            padding: 0.8rem;
+            font-size: 2rem;
+        }
+    }
+
+    &__result {
+        font-size: 3rem;
+        font-weight: bold;
     }
 }

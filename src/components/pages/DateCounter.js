@@ -53,7 +53,10 @@ export default function DateCounter() {
                     </button>
                 </div>
 
-                <div className="dateCounter__result">
+                <div
+                    className="dateCounter__result"
+                    style={{ backgroundColor: `${count < 0 ? "red" : count === 0 ? "green" : "blue"}` }}
+                >
                     {count === 0
                         ? `Today is ${result}`
                         : count > 0
