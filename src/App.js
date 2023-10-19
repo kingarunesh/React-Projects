@@ -15,6 +15,7 @@ import ImageStepSlider from "./components/image-steps-slider/ImageStepSlider";
 import SingleSimpleOpenModel from "./single-simple-open-model/SingleSimpleOpenModel";
 import OpenModelForm from "./components/open-model-form/OpenModelForm";
 import RegisterFormSteps from "./components/register-form-steps/RegisterFormSteps";
+import Accordion from "./components/accordion/Accordion";
 
 export default function App() {
     return (
@@ -37,6 +38,7 @@ export default function App() {
                         <Route path="/single-simple-open-model" element={<SingleSimpleOpenModel />} />
                         <Route path="/open-model-form" element={<OpenModelForm />} />
                         <Route path="/register-form-steps" element={<RegisterFormSteps />} />
+                        <Route path="/accordion" element={<Accordion />} />
                     </Route>
                 </Routes>
             </BrowserRouter>

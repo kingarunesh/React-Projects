@@ -76,6 +76,12 @@ export default function Home() {
                             Register Form Steps
                         </Link>
                     </li>
+
+                    <li>
+                        <Link to="/accordion" target="_blank">
+                            Accordion
+                        </Link>
+                    </li>
                 </ol>
             </nav>
 
