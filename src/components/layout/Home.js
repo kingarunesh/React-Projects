@@ -70,6 +70,12 @@ export default function Home() {
                             Open Model Form
                         </Link>
                     </li>
+
+                    <li>
+                        <Link to="/register-form-steps" target="_blank">
+                            Register Form Steps
+                        </Link>
+                    </li>
                 </ol>
             </nav>
 
