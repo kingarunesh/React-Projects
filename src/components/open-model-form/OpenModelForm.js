@@ -1,40 +1,63 @@
 import { useState } from "react";
 
 import "./open-model-form.scss";
+import Login from "./Login";
+import Register from "./Register";
 
 export default function OpenModelForm() {
     const [loginOpen, setLoginOpen] = useState(false);
+    const [registerOpen, setRegisterOpen] = useState(false);
+
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+
+    const nameHandler = function (e) {
+        setName(e.target.value);
+    };
+
+    const emailHandler = function (e) {
+        setEmail(e.target.value);
+    };
+
+    const passwordHandler = function (e) {
+        setPassword(e.target.value);
+    };
+
+    const onSubmitHandler = function (e) {
+        e.preventDefault();
+
+        // setName("");
+        // setEmail("");
+        // setPassword("");
+
+        registerHandler(false);
+    };
 
     const loginOpenHandler = function () {
         setLoginOpen((c) => !c);
     };
 
+    const registerHandler = function () {
+        setRegisterOpen((c) => !c);
+    };
+
     return (
         <>
             <div className="open-model-form">
-                {loginOpen && (
-                    <div className="open-model-form__model">
-                        <span className="material-symbols-outlined" onClick={loginOpenHandler}>
-                            close
-                        </span>
-                        <form className="open-model-form__model--form">
-                            <div className="open-model-form__model--form--input-group">
-                                <label htmlFor="email">Username or Email</label>
-                                <input type="text" placeholder="Username or Email" id="email" />
-                            </div>
+                {loginOpen && <Login onClick={loginOpenHandler} />}
 
-                            <div className="open-model-form__model--form--input-group">
-                                <label htmlFor="password">Password</label>
-                                <input type="password" placeholder="Password" id="password" autoComplete="off" />
-                            </div>
-
-                            <div className="open-model-form__model--form--input-group">
-                                <div>
-                                    <button>Login</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+                {registerOpen && (
+                    <Register
+                        onClick={registerHandler}
+                        nameHandler={nameHandler}
+                        emailHandler={emailHandler}
+                        passwordHandler={passwordHandler}
+                        name={name}
+                        email={email}
+                        password={password}
+                        onSubmitHandler={onSubmitHandler}
+                    />
                 )}
 
                 <header className="open-model-form__header">Header</header>
@@ -48,13 +71,19 @@ export default function OpenModelForm() {
                         <li>About Us</li>
 
                         <li onClick={loginOpenHandler}>Login</li>
-                        <li>Register</li>
+                        <li onClick={registerHandler}>Register</li>
                     </ul>
                 </nav>
 
                 <aside className="open-model-form__aside">SideBar</aside>
 
-                <main className="open-model-form__main">Main Content</main>
+                <main className="open-model-form__main">
+                    <ul>
+                        <li>Name: {name}</li>
+                        <li>Email: {email}</li>
+                        <li>Password: {password}</li>
+                    </ul>
+                </main>
 
                 <footer className="open-model-form__footer">Footer</footer>
             </div>
