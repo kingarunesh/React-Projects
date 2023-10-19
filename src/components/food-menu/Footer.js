@@ -3,7 +3,7 @@ export default function Footer() {
 
     return (
         <>
-            <footer>
+            <footer className="food-menu__footer">
                 <p>&copy; {date} Arunesh India, All Rights reserved.</p>
             </footer>
         </>

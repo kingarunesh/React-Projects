@@ -12,6 +12,7 @@ import QuizFlashCard from "./components/simple-flash-card/QuizFlashCard";
 import ImageFlashCard from "./components/image-flash-card/ImageFlashCard";
 import SimpleSteps from "./components/simple-steps/SimpleSteps";
 import ImageStepSlider from "./components/image-steps-slider/ImageStepSlider";
+import SingleSimpleOpenModel from "./single-simple-open-model/SingleSimpleOpenModel";
 
 export default function App() {
     return (
@@ -31,6 +32,7 @@ export default function App() {
                         <Route path="/image-flash-card" element={<ImageFlashCard />} />
                         <Route path="/simple-steps" element={<SimpleSteps />} />
                         <Route path="/image-step-slider" element={<ImageStepSlider />} />
+                        <Route path="/single-simple-open-model" element={<SingleSimpleOpenModel />} />
                     </Route>
                 </Routes>
             </BrowserRouter>
