@@ -64,6 +64,12 @@ export default function Home() {
                             Single Simple Open Model
                         </Link>
                     </li>
+
+                    <li>
+                        <Link to="/open-model-form" target="_blank">
+                            Open Model Form
+                        </Link>
+                    </li>
                 </ol>
             </nav>
 
