@@ -1,16 +1,28 @@
+import { useState } from "react";
+
 import "./single-simple-open-model.scss";
 
 export default function SingleSimpleOpenModel() {
+    const [open, setOpen] = useState(false);
+
+    const modelHandler = function () {
+        setOpen((c) => !c);
+    };
+
     return (
         <>
             <div className="single-simple-open-model">
-                <div className="model">
-                    <div className="model__box">
-                        <div>Login Form</div>
+                {open && (
+                    <div className="model">
+                        <div className="model__box">
+                            <div>Login Form</div>
 
-                        <span class="material-symbols-outlined">close</span>
+                            <span class="material-symbols-outlined" onClick={modelHandler}>
+                                close
+                            </span>
+                        </div>
                     </div>
-                </div>
+                )}
 
                 <header className="single-simple-open-model__header">
                     <h2>Lorem ipsum dolor sit.</h2>
@@ -26,7 +38,9 @@ export default function SingleSimpleOpenModel() {
                         <li>Contact Us</li>
                         <li>About Us</li>
 
-                        <li className="login">Login</li>
+                        <li className="login" onClick={modelHandler}>
+                            Login
+                        </li>
                         <li className="register">Register</li>
                     </ul>
                 </aside>
