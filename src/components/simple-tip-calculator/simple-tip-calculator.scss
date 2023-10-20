@@ -1,0 +1,49 @@
+.simpleTipCalculator {
+    &__container {
+        background-color: #ededed;
+        width: 60rem;
+        margin: 4rem auto;
+        padding: 2rem;
+        border-radius: 1rem;
+
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+
+        &--form {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            &--group {
+                display: flex;
+                flex-direction: column;
+                gap: 0.6rem;
+
+                label {
+                    font-size: 1.8rem;
+                    display: block;
+                }
+
+                input,
+                select {
+                    padding: 0.4rem;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+
+        &--result {
+            p {
+                font-size: 1.8rem;
+            }
+
+            button {
+                font-size: 1.8rem;
+                padding: 0.6rem 1rem;
+                margin-top: 2rem;
+                cursor: pointer;
+            }
+        }
+    }
+}

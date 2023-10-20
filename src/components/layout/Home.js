@@ -82,6 +82,12 @@ export default function Home() {
                             Accordion
                         </Link>
                     </li>
+
+                    <li>
+                        <Link to="/simple-tip-calculator" target="_blank">
+                            Tip Calculator
+                        </Link>
+                    </li>
                 </ol>
             </nav>
 
