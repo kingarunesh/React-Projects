@@ -64,28 +64,29 @@ export default function Home() {
                             Single Simple Open Model
                         </Link>
                     </li>
-
                     <li>
                         <Link to="/open-model-form" target="_blank">
                             Open Model Form
                         </Link>
                     </li>
-
                     <li>
                         <Link to="/register-form-steps" target="_blank">
                             Register Form Steps
                         </Link>
                     </li>
-
                     <li>
                         <Link to="/accordion" target="_blank">
                             Accordion
                         </Link>
                     </li>
-
                     <li>
                         <Link to="/simple-tip-calculator" target="_blank">
                             Tip Calculator
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="https://guileless-arithmetic-7886cc.netlify.app/" target="_blank">
+                            Travel Packing List
                         </Link>
                     </li>
                 </ol>
